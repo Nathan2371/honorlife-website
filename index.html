@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Honor Life association — Élever les Esprits, Éclairer les Vies</title>
+<meta name="description" content="Honor Life association forme des leaders intègres à travers des programmes de Leadership Spirituel, Théologie Pratique et Coaching de Vie. Élever les esprits, éclairer les vies.">
+<meta name="keywords" content="Honor Life association, leadership spirituel, théologie pratique, coaching de vie, formation en ligne, académie chrétienne">
+<meta name="author" content="Honor Life association">
+<link rel="canonical" href="https://www.honorlifeassociation.com/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.honorlifeassociation.com/">
+<meta property="og:title" content="Honor Life association — Élever les Esprits, Éclairer les Vies">
+<meta property="og:description" content="Des programmes de formation en Leadership Spirituel, Théologie Pratique et Coaching de Vie, pour formez des leaders intègres et impactants.">
+<meta property="og:image" content="https://www.honorlifeassociation.com/icon-512.png">
+<meta property="og:locale" content="fr_FR">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Honor Life association — Élever les Esprits, Éclairer les Vies">
+<meta name="twitter:description" content="Des programmes de formation en Leadership Spirituel, Théologie Pratique et Coaching de Vie.">
+<meta name="twitter:image" content="https://www.honorlifeassociation.com/icon-512.png">
+
+<!-- Favicons -->
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0b1730">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy-deep:#0b1730;
+  --navy:#132a52;
+  --navy-light:#1f3f74;
+  --navy-soft:#eef2f8;
+  --gold:#c8983f;
+  --gold-light:#e7c477;
+  --gold-dark:#96712a;
+  --cream:#faf7f0;
+  --white:#ffffff;
+  --ink:#182236;
+  --gray:#5c657a;
+  --gray-light:#8891a3;
+  --shadow:0 20px 50px -20px rgba(11,23,48,.35);
+  --ease:cubic-bezier(.22,.98,.35,1);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Inter',sans-serif;
+  color:var(--ink);
+  background:var(--white);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{text-decoration:none;color:inherit;}
+ul{list-style:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;}
+.container{width:min(1180px,92%);margin-inline:auto;}
+h1,h2,h3,h4{font-family:'Playfair Display',serif;line-height:1.15;color:var(--navy-deep);}
+.eyebrow{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:1.28rem;
+  color:var(--gold-dark);
+  letter-spacing:.02em;
+  display:inline-flex;
+  align-items:center;
+  gap:.6rem;
+  margin-bottom:.9rem;
+}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--gold);display:inline-block;}
+.section-head{max-width:640px;margin-bottom:3.2rem;}
+.section-head.center{margin-inline:auto;text-align:center;}
+.section-head.center .eyebrow::before{display:none;}
+.section-head h2{font-size:clamp(2rem,4vw,2.9rem);margin-bottom:1rem;}
+.section-head p{color:var(--gray);font-size:1.08rem;line-height:1.7;}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important;}
+}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease);}
+.reveal.in-view{opacity:1;transform:translateY(0);}
+.reveal-delay-1.in-view{transition-delay:.1s;}
+.reveal-delay-2.in-view{transition-delay:.2s;}
+.reveal-delay-3.in-view{transition-delay:.3s;}
+
+/* ---------- nav ---------- */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  background:rgba(255,255,255,.7);
+  backdrop-filter:blur(14px) saturate(160%);
+  -webkit-backdrop-filter:blur(14px) saturate(160%);
+  border-bottom:1px solid rgba(19,42,82,.08);
+  transition:background .4s,box-shadow .4s,padding .4s;
+  padding:.55rem 0;
+}
+header.scrolled{
+  background:rgba(255,255,255,.92);
+  box-shadow:0 8px 30px -18px rgba(11,23,48,.25);
+}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;}
+.brand{display:flex;align-items:center;gap:.7rem;}
+.brand img{width:52px;height:52px;flex-shrink:0;object-fit:contain;}
+.brand-text{font-family:'Playfair Display',serif;font-weight:800;color:var(--navy-deep);font-size:1.02rem;line-height:1.2;letter-spacing:.01em;}
+.brand-text span{display:block;color:var(--gold-dark);font-family:'Inter',sans-serif;font-weight:700;font-size:.62rem;letter-spacing:.16em;margin-bottom:.15rem;}
+.nav-links{display:flex;align-items:center;gap:1.7rem;}
+.nav-links a{
+  font-size:.88rem;font-weight:600;color:var(--navy);position:relative;padding:.3rem 0;white-space:nowrap;
+}
+.nav-links a::after{
+  content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--gold);transition:width .3s var(--ease);
+}
+.nav-links a:hover::after{width:100%;}
+.nav-cta{
+  background:linear-gradient(135deg,var(--gold-light),var(--gold) 60%,var(--gold-dark));
+  color:var(--navy-deep) !important;font-weight:700 !important;
+  padding:.65rem 1.3rem;border-radius:999px;font-size:.85rem !important;
+  box-shadow:0 10px 24px -10px rgba(200,152,63,.6);
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease);
+}
+.nav-cta::after{display:none;}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px rgba(200,152,63,.75);}
+.burger{display:none;flex-direction:column;gap:5px;padding:.4rem;}
+.burger span{width:24px;height:2px;background:var(--navy-deep);border-radius:2px;transition:.3s;}
+.mobile-panel{
+  display:none;position:fixed;inset:0 0 auto 0;top:64px;background:var(--white);
+  padding:1.5rem 6%;box-shadow:0 20px 30px -20px rgba(0,0,0,.2);z-index:999;
+  max-height:calc(100vh - 64px);overflow-y:auto;
+}
+.mobile-panel a{display:block;padding:.9rem 0;border-bottom:1px solid #eee;font-weight:600;color:var(--navy);}
+.mobile-panel.open{display:block;}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;
+  min-height:100vh;
+  display:flex;align-items:center;justify-content:center;
+  padding:8.5rem 0 5rem;
+  background:
+    radial-gradient(circle at 50% 18%, rgba(200,152,63,.09), transparent 42%),
+    linear-gradient(180deg, #ffffff 0%, #f5f7fb 55%, #eef1f7 100%);
+  overflow:hidden;
+  text-align:center;
+}
+.wing{position:absolute;top:6%;width:46vw;max-width:640px;opacity:.55;pointer-events:none;}
+.wing.left{left:-9vw;transform:scaleX(1);animation:floatY 9s ease-in-out infinite;}
+.wing.right{right:-9vw;transform:scaleX(-1);animation:floatY 9s ease-in-out infinite reverse;}
+@keyframes floatY{0%,100%{transform:translateY(0) scaleX(var(--flip,1));}50%{transform:translateY(-18px) scaleX(var(--flip,1));}}
+.wing.right{--flip:-1;}
+.hero-inner{position:relative;z-index:2;}
+.hero-emblem{width:220px;height:220px;margin:0 auto 1.6rem;position:relative;}
+.hero-emblem img{width:100%;height:100%;object-fit:contain;
+  opacity:0;transform:scale(.85);
+  animation:emblemIn 1.1s var(--ease) forwards .25s;
+  filter:drop-shadow(0 18px 30px rgba(11,23,48,.18));}
+@keyframes emblemIn{to{opacity:1;transform:scale(1);}}
+.hero-inner .eyebrow{font-size:1.55rem;justify-content:center;color:var(--gold-dark);}
+.hero-inner .eyebrow::before{display:none;}
+.hero h1{
+  font-size:clamp(2.1rem,5.4vw,3.9rem);
+  font-weight:800;color:var(--navy-deep);
+  margin:.3rem 0 1.1rem;
+  letter-spacing:.005em;
+}
+.hero-sub{
+  font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.5rem;color:var(--navy-light);
+  margin-bottom:2.2rem;
+}
+.hero-ctas{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+.btn{
+  display:inline-flex;align-items:center;gap:.55rem;
+  padding:1rem 2.1rem;border-radius:999px;font-weight:700;font-size:.95rem;
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease);
+}
+.btn-gold{
+  background:linear-gradient(135deg,var(--gold-light),var(--gold) 55%,var(--gold-dark));
+  color:var(--navy-deep);
+  box-shadow:0 14px 30px -12px rgba(200,152,63,.65);
+}
+.btn-gold:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 20px 36px -12px rgba(200,152,63,.8);}
+.btn-outline{
+  border:1.5px solid var(--navy);color:var(--navy);background:rgba(255,255,255,.5);
+}
+.btn-outline:hover{background:var(--navy);color:var(--white);transform:translateY(-3px);}
+.scroll-cue{
+  position:absolute;bottom:2.2rem;left:50%;transform:translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:.4rem;color:var(--gray);
+  font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;
+  animation:bob 2.4s ease-in-out infinite;
+}
+@keyframes bob{0%,100%{transform:translate(-50%,0);}50%{transform:translate(-50%,8px);}}
+.scroll-cue span{width:1px;height:34px;background:linear-gradient(var(--gold),transparent);}
+
+/* ---------- pillars ---------- */
+.pillars{padding:2.5rem 0 6rem;background:var(--white);}
+.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;perspective:1200px;}
+.tilt-card{
+  position:relative;
+  background:var(--white);
+  border:1px solid #e7e2d6;
+  border-radius:18px;
+  padding:2.1rem 1.7rem;
+  display:flex;align-items:center;gap:1.1rem;
+  transform-style:preserve-3d;
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s;
+  will-change:transform;
+}
+.tilt-card:hover{box-shadow:var(--shadow);border-color:var(--gold-light);}
+.tilt-icon{
+  width:58px;height:58px;flex-shrink:0;border-radius:14px;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(145deg,var(--navy),var(--navy-light));
+  color:var(--gold-light);
+  transform:translateZ(30px);
+}
+.tilt-icon svg{width:28px;height:28px;}
+.tilt-card h3{font-size:1.12rem;font-weight:700;color:var(--navy-deep);transform:translateZ(20px);}
+.tilt-card p.mini{font-family:'Inter';font-size:.86rem;color:var(--gray);margin-top:.25rem;transform:translateZ(15px);}
+
+/* ---------- programs ---------- */
+.programs{padding:6rem 0;background:var(--navy-soft);position:relative;}
+.program-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem;perspective:1400px;}
+.program-card{
+  background:var(--white);border-radius:20px;overflow:hidden;
+  box-shadow:0 10px 30px -18px rgba(11,23,48,.25);
+  transform-style:preserve-3d;transition:transform .4s var(--ease),box-shadow .4s var(--ease);
+  will-change:transform;
+}
+.program-card:hover{box-shadow:0 30px 50px -20px rgba(11,23,48,.35);}
+.program-visual{
+  height:190px;position:relative;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,var(--navy-deep),var(--navy) 55%,var(--navy-light));
+}
+.program-visual::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 30% 20%, rgba(232,196,119,.25), transparent 55%);
+}
+.program-visual svg{width:64px;height:64px;color:var(--gold-light);position:relative;z-index:1;transform:translateZ(40px);
+  filter:drop-shadow(0 8px 14px rgba(0,0,0,.35));}
+.program-body{padding:1.7rem 1.6rem 2rem;transform:translateZ(25px);}
+.program-body h3{font-size:1.28rem;margin-bottom:.6rem;color:var(--navy-deep);}
+.program-body p{color:var(--gray);font-size:.93rem;line-height:1.65;margin-bottom:1.1rem;}
+.program-link{
+  display:inline-flex;align-items:center;gap:.4rem;font-weight:700;font-size:.85rem;color:var(--gold-dark);
+}
+.program-link svg{width:15px;height:15px;transition:transform .3s var(--ease);}
+.program-card:hover .program-link svg{transform:translateX(5px);}
+
+/* ---------- stats ---------- */
+.stats{
+  padding:4.5rem 0;background:linear-gradient(135deg,var(--navy-deep),var(--navy) 60%,var(--navy-light));
+  position:relative;overflow:hidden;
+}
+.stats::before{
+  content:"";position:absolute;inset:0;
+  background-image:radial-gradient(circle,rgba(232,196,119,.14) 1px,transparent 1.4px);
+  background-size:26px 26px;opacity:.5;
+}
+.stats-grid{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;text-align:center;}
+.stat-num{font-family:'Playfair Display',serif;font-weight:800;font-size:clamp(2.1rem,4vw,3rem);color:var(--gold-light);}
+.stat-label{font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:#c7d0e3;margin-top:.4rem;}
+
+/* ---------- about ---------- */
+.about{padding:7rem 0;background:var(--white);}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
+.about-visual{
+  position:relative;aspect-ratio:1/1;border-radius:24px;
+  background:radial-gradient(circle at 30% 25%, rgba(200,152,63,.13), transparent 60%), linear-gradient(160deg,#0f2044,#152c56 55%,#1c3a6e);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:var(--shadow);
+}
+.about-visual svg{width:56%;height:56%;}
+.about-visual::after{
+  content:"";position:absolute;inset:14px;border:1px solid rgba(232,196,119,.35);border-radius:18px;pointer-events:none;
+}
+.about-copy p{color:var(--gray);font-size:1.03rem;line-height:1.85;margin-bottom:1.2rem;}
+.about-list{margin-top:1.6rem;display:flex;flex-direction:column;gap:.9rem;}
+.about-list li{display:flex;align-items:flex-start;gap:.7rem;font-size:.96rem;color:var(--navy);}
+.about-list svg{width:19px;height:19px;color:var(--gold);flex-shrink:0;margin-top:.15rem;}
+
+/* ---------- founder highlight ---------- */
+.founder-box{
+  margin-top:2.2rem;display:flex;gap:1.3rem;align-items:center;
+  background:var(--navy-soft);border-left:3px solid var(--gold);
+  border-radius:14px;padding:1.4rem 1.6rem;
+}
+.founder-box img{
+  width:76px;height:76px;border-radius:50%;object-fit:cover;flex-shrink:0;
+  box-shadow:0 8px 18px -8px rgba(11,23,48,.4);border:2px solid var(--white);
+}
+.founder-box p{margin:0;font-size:.92rem;color:var(--navy);line-height:1.65;}
+.founder-box strong{color:var(--navy-deep);}
+
+/* ---------- events (actualités) ---------- */
+.events{padding:6.5rem 0;background:var(--white);}
+.event-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.8rem;}
+.event-card{
+  display:grid;grid-template-columns:230px 1fr;
+  background:var(--navy-soft);border-radius:18px;overflow:hidden;
+  box-shadow:0 10px 30px -20px rgba(11,23,48,.2);
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease);
+}
+.event-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);}
+.event-thumb{position:relative;overflow:hidden;min-height:210px;}
+.event-thumb img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .5s var(--ease);cursor:zoom-in;}
+.event-card:hover .event-thumb img{transform:scale(1.07);}
+.event-badge{
+  position:absolute;top:.8rem;left:.8rem;background:var(--gold);color:var(--navy-deep);
+  font-size:.66rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+  padding:.32rem .7rem;border-radius:999px;z-index:1;
+}
+.event-body{padding:1.7rem 1.7rem;display:flex;flex-direction:column;}
+.event-date{font-size:.76rem;font-weight:700;color:var(--gold-dark);letter-spacing:.05em;text-transform:uppercase;margin-bottom:.5rem;}
+.event-body h3{font-size:1.18rem;margin-bottom:.55rem;}
+.event-body p{font-size:.88rem;color:var(--gray);line-height:1.62;margin-bottom:.6rem;}
+.event-meta{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:auto;padding-top:.4rem;}
+.event-tag{font-size:.7rem;background:var(--white);border:1px solid #d7ddea;color:var(--navy);padding:.28rem .65rem;border-radius:999px;white-space:nowrap;}
+
+/* ---------- gallery ---------- */
+.gallery{padding:6.5rem 0;background:var(--navy-soft);}
+.gallery-filters{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center;margin-bottom:2.6rem;}
+.gfilter{
+  padding:.55rem 1.2rem;border-radius:999px;font-size:.84rem;font-weight:600;
+  border:1px solid #d7ddea;color:var(--navy);background:var(--white);transition:.25s;
+}
+.gfilter:hover{border-color:var(--gold);color:var(--gold-dark);}
+.gfilter.active{background:var(--navy-deep);border-color:var(--navy-deep);color:var(--white);}
+.gallery-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;
+  grid-auto-flow:dense;
+}
+.gitem{
+  position:relative;border-radius:14px;overflow:hidden;cursor:pointer;
+  aspect-ratio:1/1;background:#0b1730;
+  opacity:0;transform:scale(.94);animation:gpop .5s var(--ease) forwards;
+}
+@keyframes gpop{to{opacity:1;transform:scale(1);}}
+.gitem.tall{grid-row:span 2;}
+.gitem.wide{grid-column:span 2;}
+.gitem img,.gitem video{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease);}
+.gitem:hover img,.gitem:hover video{transform:scale(1.08);}
+.gitem .g-overlay{
+  position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(11,23,48,.88));
+  display:flex;align-items:flex-end;padding:.8rem;opacity:0;transition:opacity .35s;
+}
+.gitem:hover .g-overlay{opacity:1;}
+.gitem .g-overlay span{color:#fff;font-size:.76rem;font-weight:600;line-height:1.35;}
+.gitem .play-btn{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.92);
+  display:flex;align-items:center;justify-content:center;color:var(--navy-deep);
+  box-shadow:0 8px 20px -6px rgba(0,0,0,.55);pointer-events:none;
+}
+.gitem .play-btn svg{width:17px;height:17px;margin-left:2px;}
+.gitem.hidden{display:none;}
+.gallery-empty{text-align:center;color:var(--gray);font-size:.94rem;padding:2rem 0;grid-column:1/-1;}
+.gallery-more{text-align:center;margin-top:2.6rem;color:var(--gray);font-size:.9rem;}
+
+/* lightbox */
+.lightbox{
+  position:fixed;inset:0;background:rgba(11,23,48,.95);z-index:2000;
+  display:none;align-items:center;justify-content:center;padding:4vh 5vw;
+}
+.lightbox.open{display:flex;}
+.lightbox-inner{position:relative;max-width:min(920px,90vw);max-height:88vh;width:100%;}
+.lightbox-inner img,.lightbox-inner video{width:100%;max-height:76vh;object-fit:contain;border-radius:10px;display:block;margin:0 auto;background:#000;}
+.lightbox-cap{color:#dbe2ef;text-align:center;font-size:.88rem;margin-top:1.1rem;}
+.lightbox-close,.lightbox-prev,.lightbox-next{
+  position:absolute;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);
+  color:#fff;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  transition:.3s;z-index:2;
+}
+.lightbox-close:hover,.lightbox-prev:hover,.lightbox-next:hover{background:var(--gold);border-color:var(--gold);color:var(--navy-deep);}
+.lightbox-close{top:-54px;right:0;}
+.lightbox-prev{left:-56px;top:50%;transform:translateY(-50%);}
+.lightbox-next{right:-56px;top:50%;transform:translateY(-50%);}
+@media (max-width:900px){
+  .lightbox-close{top:-46px;right:0;}
+  .lightbox-prev{left:.3rem;}
+  .lightbox-next{right:.3rem;}
+}
+
+/* ---------- values ---------- */
+.values{padding:6rem 0;background:var(--navy-soft);}
+.values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;}
+.value-card{
+  background:var(--white);border-radius:16px;padding:1.9rem 1.4rem;text-align:left;
+  border-top:3px solid var(--gold);transition:transform .35s var(--ease),box-shadow .35s var(--ease);
+}
+.value-card:hover{transform:translateY(-8px);box-shadow:var(--shadow);}
+.value-card .num{font-family:'Playfair Display',serif;font-style:italic;color:var(--gold-dark);font-size:1.6rem;margin-bottom:.6rem;display:block;}
+.value-card h4{font-size:1.05rem;margin-bottom:.5rem;color:var(--navy-deep);}
+.value-card p{font-size:.88rem;color:var(--gray);line-height:1.6;}
+
+/* ---------- testimonials ---------- */
+.testimonials{padding:7rem 0;background:var(--white);position:relative;overflow:hidden;}
+.testi-track-wrap{overflow:hidden;}
+.testi-track{display:flex;gap:1.6rem;transition:transform .6s var(--ease);}
+.testi-card{
+  flex:0 0 calc(33.333% - 1.07rem);
+  background:var(--cream);border:1px solid #ece5d6;border-radius:18px;padding:2.1rem 1.8rem;
+  display:flex;flex-direction:column;gap:1rem;
+}
+.testi-stars{display:flex;gap:.2rem;color:var(--gold);}
+.testi-stars svg{width:16px;height:16px;}
+.testi-card p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.18rem;line-height:1.6;color:var(--navy);}
+.testi-person{display:flex;align-items:center;gap:.8rem;margin-top:auto;}
+.testi-avatar{
+  width:44px;height:44px;border-radius:50%;
+  background:linear-gradient(135deg,var(--navy),var(--navy-light));
+  display:flex;align-items:center;justify-content:center;color:var(--gold-light);font-family:'Playfair Display';font-weight:700;
+}
+.testi-name{font-weight:700;font-size:.9rem;color:var(--navy-deep);}
+.testi-role{font-size:.78rem;color:var(--gray);}
+.testi-nav{display:flex;justify-content:center;gap:.7rem;margin-top:2.4rem;}
+.testi-dot{width:9px;height:9px;border-radius:50%;background:#d8d2c2;transition:.3s;}
+.testi-dot.active{background:var(--gold);width:26px;border-radius:6px;}
+
+/* ---------- cta banner ---------- */
+.cta-banner{
+  position:relative;padding:5.5rem 0;text-align:center;overflow:hidden;
+  background:linear-gradient(135deg,var(--navy-deep),var(--navy) 60%,var(--navy-light));
+}
+.cta-banner::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 50% 0%, rgba(232,196,119,.18), transparent 55%);
+}
+.cta-banner h2{position:relative;color:var(--white);font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:1rem;}
+.cta-banner p{position:relative;color:#c7d0e3;max-width:520px;margin:0 auto 2rem;font-size:1.02rem;}
+.cta-banner .btn-gold{position:relative;}
+
+/* ---------- contact ---------- */
+.contact{padding:7rem 0;background:var(--white);}
+.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:3.5rem;}
+.contact-info h3{font-size:1.5rem;margin-bottom:1rem;}
+.contact-info p{color:var(--gray);line-height:1.75;margin-bottom:1.8rem;}
+.contact-item{display:flex;align-items:center;gap:.9rem;margin-bottom:1.1rem;}
+.contact-icon{
+  width:42px;height:42px;border-radius:11px;background:var(--navy-soft);color:var(--gold-dark);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.contact-icon svg{width:19px;height:19px;}
+.contact-item .lbl{font-size:.75rem;text-transform:uppercase;letter-spacing:.07em;color:var(--gray-light);}
+.contact-item .val{font-weight:600;color:var(--navy-deep);font-size:.95rem;}
+.contact-form{
+  background:var(--navy-soft);border-radius:20px;padding:2.4rem;display:grid;gap:1.1rem;
+}
+.field{display:flex;flex-direction:column;gap:.4rem;}
+.field label{font-size:.8rem;font-weight:600;color:var(--navy);}
+.field input,.field textarea{
+  border:1px solid #d7ddea;border-radius:10px;padding:.85rem 1rem;font-family:inherit;font-size:.92rem;
+  background:var(--white);transition:border-color .3s,box-shadow .3s;
+}
+.field input:focus,.field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(200,152,63,.15);outline:none;}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;}
+.contact-form .btn-gold{justify-self:start;border:none;margin-top:.3rem;}
+.form-note{font-size:.76rem;color:var(--gray-light);margin-top:.2rem;}
+.form-note a{color:var(--gold-dark);font-weight:600;text-decoration:underline;}
+
+/* ---------- footer ---------- */
+footer{
+  position:relative;background:var(--navy-deep);color:#c7d0e3;padding:4rem 0 1.6rem;overflow:hidden;
+}
+.leaf-pattern{position:absolute;inset:0;opacity:.10;background-repeat:repeat-x;background-size:120px auto;background-position:bottom;}
+.footer-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:2.5rem;padding-bottom:2.6rem;border-bottom:1px solid rgba(255,255,255,.08);}
+.footer-brand{display:flex;align-items:center;gap:.7rem;margin-bottom:1rem;}
+.footer-brand img{width:52px;height:52px;object-fit:contain;}
+.footer-brand-text{font-family:'Playfair Display';font-weight:800;color:var(--white);font-size:1.05rem;}
+.footer-brand-text span{display:block;color:var(--gold-light);font-family:'Inter';font-weight:700;font-size:.62rem;letter-spacing:.16em;}
+.footer p.desc{font-size:.88rem;line-height:1.7;color:#a7b2c8;max-width:280px;}
+.footer h5{color:var(--white);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:1.1rem;}
+.footer ul li{margin-bottom:.7rem;}
+.footer ul li a{font-size:.9rem;color:#b7c0d4;transition:color .3s,padding-left .3s;}
+.footer ul li a:hover{color:var(--gold-light);padding-left:4px;}
+.footer-contact li{display:flex;align-items:center;gap:.6rem;font-size:.88rem;color:#b7c0d4;margin-bottom:.85rem;}
+.footer-contact svg{width:16px;height:16px;color:var(--gold-light);flex-shrink:0;}
+.footer-bottom{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:center;padding-top:1.5rem;flex-wrap:wrap;gap:1rem;}
+.footer-bottom p{font-size:.8rem;color:#8a94ab;}
+.socials{display:flex;gap:.7rem;}
+.socials a{
+  width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.18);
+  display:flex;align-items:center;justify-content:center;transition:.3s;
+}
+.socials a:hover{background:var(--gold);border-color:var(--gold);}
+.socials svg{width:16px;height:16px;color:var(--white);}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .pillar-grid,.program-grid{grid-template-columns:1fr;}
+  .about-grid{grid-template-columns:1fr;gap:2.5rem;}
+  .about-visual{max-width:380px;margin-inline:auto;}
+  .values-grid{grid-template-columns:repeat(2,1fr);}
+  .stats-grid{grid-template-columns:repeat(2,1fr);row-gap:2.2rem;}
+  .contact-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .testi-card{flex:0 0 calc(100% - 0rem);}
+  .event-grid{grid-template-columns:1fr;}
+  .gallery-grid{grid-template-columns:repeat(3,1fr);}
+}
+@media (max-width:760px){
+  .nav-links{display:none;}
+  .burger{display:flex;}
+  .wing{width:70vw;opacity:.35;}
+  .footer-grid{grid-template-columns:1fr;}
+  .event-card{grid-template-columns:1fr;}
+  .event-thumb{height:200px;min-height:0;}
+  .founder-box{flex-direction:column;text-align:center;}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);}
+  .gitem.wide{grid-column:span 2;}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header id="siteHeader">
+  <div class="container nav-wrap">
+    <a href="#accueil" class="brand">
+      <img src="logo.png" alt="Honor Life association logo" width="52" height="52">
+      <span class="brand-text"><span>HONOR LIFE</span>association</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#accueil">Accueil</a>
+      <a href="#formations">Nos Formations</a>
+      <a href="#evenements">Événements</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#apropos">À Propos</a>
+      <a href="#temoignages">Témoignages</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="nav-cta">Rejoindre l'Académie</a>
+    </nav>
+    <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="#accueil">Accueil</a>
+    <a href="#formations">Nos Formations</a>
+    <a href="#evenements">Événements</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#apropos">À Propos</a>
+    <a href="#temoignages">Témoignages</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<!-- shared SVG defs -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="icon-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/><path d="M22 10v6"/></symbol>
+    <symbol id="icon-hand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 12h4a2 2 0 1 1 0 4h-6l-3-1"/><path d="M2 13l4 4 1-1"/><path d="M9 12l4-4a2 2 0 0 1 3 3l-2 2"/><path d="M6 9c1.5-3 5-4 7-2"/></symbol>
+    <symbol id="icon-team" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="8" r="2.5"/><path d="M2 21v-1c0-3 3-5 7-5s7 2 7 5v1"/><path d="M16 14c3 0 6 1.7 6 4.5V21"/></symbol>
+    <symbol id="icon-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4.5C4 3.7 4.7 3 5.5 3H14v18H5.5c-.8 0-1.5-.7-1.5-1.5Z"/><path d="M20 3h-6v18h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1Z"/></symbol>
+    <symbol id="icon-present" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M3 12h18"/><path d="M12 7v13"/><path d="M8 7a2.5 2.5 0 0 1 0-5c2 0 4 2.5 4 5"/><path d="M16 7a2.5 2.5 0 0 0 0-5c-2 0-4 2.5-4 5"/></symbol>
+    <symbol id="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.55L3 20l1.05-5.4A8.5 8.5 0 1 1 21 11.5Z"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.7L6 21l1.6-7L2.2 9.3l7.1-.7Z"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .6 3a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c1 .3 2 .5 3 .6a2 2 0 0 1 1.7 2Z"/></symbol>
+    <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="icon-fb" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></symbol>
+    <symbol id="icon-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1"/></symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M8 3v4"/><path d="M16 3v4"/></symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="icon-chev-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></symbol>
+    <symbol id="icon-chev-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="accueil">
+  <svg class="wing left" viewBox="0 0 400 500" preserveAspectRatio="xMinYMid meet">
+    <path d="M400 250 C300 100 150 60 20 180 C120 170 220 220 260 320 C180 300 90 340 50 420 C150 430 260 400 330 330 C300 380 300 430 340 480 C400 420 400 330 400 250Z" fill="#bcd4ee" opacity="0.55"/>
+  </svg>
+  <svg class="wing right" viewBox="0 0 400 500" preserveAspectRatio="xMaxYMid meet">
+    <path d="M400 250 C300 100 150 60 20 180 C120 170 220 220 260 320 C180 300 90 340 50 420 C150 430 260 400 330 330 C300 380 300 430 340 480 C400 420 400 330 400 250Z" fill="#bcd4ee" opacity="0.55"/>
+  </svg>
+  <div class="hero-inner container">
+    <div class="hero-emblem"><img src="logo.png" alt="Honor Life association logo" width="52" height="52"></div>
+    <p class="eyebrow">Bienvenue à l'association</p>
+    <h1>HONOR LIFE</h1>
+    <p class="hero-sub">Élever les Esprits, Éclairer les Vies</p>
+    <div class="hero-ctas">
+      <a href="#formations" class="btn btn-gold">Découvrez Nos Formations <svg width="16" height="16"><use href="#icon-arrow"></use></svg></a>
+      <a href="#evenements" class="btn btn-outline">Voir Nos Événements</a>
+    </div>
+  </div>
+  <div class="scroll-cue"><span></span>Défiler</div>
+</section>
+
+<!-- ============ PILLARS ============ -->
+<section class="pillars">
+  <div class="container pillar-grid">
+    <div class="tilt-card reveal">
+      <div class="tilt-icon"><svg><use href="#icon-cap"></use></svg></div>
+      <div><h3>Formations d'Excellence</h3><p class="mini">Programmes rigoureux, enseignés par des formateurs expérimentés.</p></div>
+    </div>
+    <div class="tilt-card reveal reveal-delay-1">
+      <div class="tilt-icon"><svg><use href="#icon-hand"></use></svg></div>
+      <div><h3>Éthique &amp; Intégrité</h3><p class="mini">Des valeurs solides au cœur de chaque enseignement dispensé.</p></div>
+    </div>
+    <div class="tilt-card reveal reveal-delay-2">
+      <div class="tilt-icon"><svg><use href="#icon-team"></use></svg></div>
+      <div><h3>Impact Communautaire</h3><p class="mini">Former des leaders qui transforment durablement leur communauté.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROGRAMS ============ -->
+<section class="programs" id="formations">
+  <div class="container">
+    <div class="section-head center">
+      <p class="eyebrow">Nos Formations</p>
+      <h2>Des Parcours Pensés pour Transformer</h2>
+      <p>Trois piliers de formation conçus pour bâtir des leaders solides dans l'esprit, la pratique et le service.</p>
+    </div>
+    <div class="program-grid">
+      <div class="program-card reveal">
+        <div class="program-visual"><svg><use href="#icon-book"></use></svg></div>
+        <div class="program-body">
+          <h3>Leadership Spirituel</h3>
+          <p>Développez une posture de leader ancrée dans la foi, la sagesse et le discernement, pour guider avec authenticité.</p>
+          <a href="#contact" class="program-link">En savoir plus <svg><use href="#icon-arrow"></use></svg></a>
+        </div>
+      </div>
+      <div class="program-card reveal reveal-delay-1">
+        <div class="program-visual"><svg><use href="#icon-present"></use></svg></div>
+        <div class="program-body">
+          <h3>Théologie Pratique</h3>
+          <p>Une approche concrète des Écritures, alliant fondements doctrinaux et application dans la vie quotidienne.</p>
+          <a href="#contact" class="program-link">En savoir plus <svg><use href="#icon-arrow"></use></svg></a>
+        </div>
+      </div>
+      <div class="program-card reveal reveal-delay-2">
+        <div class="program-visual"><svg><use href="#icon-chat"></use></svg></div>
+        <div class="program-body">
+          <h3>Coaching de Vie</h3>
+          <p>Un accompagnement personnalisé pour révéler votre potentiel et avancer avec clarté vers votre mission.</p>
+          <a href="#contact" class="program-link">En savoir plus <svg><use href="#icon-arrow"></use></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div><div class="stat-num" data-count="1200">0</div><div class="stat-label">Étudiants Formés</div></div>
+    <div><div class="stat-num" data-count="18">0</div><div class="stat-label">Pays Représentés</div></div>
+    <div><div class="stat-num" data-count="12">0</div><div class="stat-label">Années d'Expérience</div></div>
+    <div><div class="stat-num" data-count="24">0</div><div class="stat-label">Programmes Offerts</div></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="apropos">
+  <div class="container about-grid">
+    <div class="about-visual reveal">
+      <img src="logo.png" alt="Honor Life association logo" style="width:64%;height:64%;object-fit:contain;filter:drop-shadow(0 12px 24px rgba(0,0,0,.35));">
+    </div>
+    <div class="about-copy reveal reveal-delay-1">
+      <p class="eyebrow">À Propos de l'association</p>
+      <h2>Une Vision au Service des Esprits et des Vies</h2>
+      <p>Honor Life association est née d'une conviction simple : chaque personne porte en elle un potentiel de leadership qui mérite d'être révélé, formé et mis au service des autres.</p>
+      <p>Nous unissons rigueur académique, profondeur spirituelle et accompagnement humain pour former des leaders intègres, capables de porter un impact réel dans leur foyer, leur église et leur communauté.</p>
+      <ul class="about-list">
+        <li><svg><use href="#icon-check"></use></svg> Formateurs expérimentés et reconnus dans leur domaine</li>
+        <li><svg><use href="#icon-check"></use></svg> Programmes disponibles en présentiel et à distance</li>
+        <li><svg><use href="#icon-check"></use></svg> Accompagnement personnalisé tout au long du parcours</li>
+      </ul>
+      <div class="founder-box">
+        <img src="images/equipe/fondatrice-alix-tomeba.JPG" alt="Mme Alix Tomeba Tchengou, fondatrice et présidente de Honor Life association">
+        <p><strong>Honor Life association a été fondée par Mme Alix TOMEBA TCHENGOU</strong>, qui en assure aujourd'hui la présidence. C'est sous son impulsion que l'association mène ses conférences, ses ateliers et ses missions de solidarité auprès des familles et des communautés.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EVENTS / ACTUALITÉS ============ -->
+<section class="events" id="evenements">
+  <div class="container">
+    <div class="section-head center">
+      <p class="eyebrow">Actualités</p>
+      <h2>Nos Événements Passés</h2>
+      <p>Conférences, missions de santé et ateliers de formation : retour sur les temps forts organisés par Honor Life association et ses partenaires.</p>
+    </div>
+    <div class="event-grid">
+
+      <div class="event-card reveal">
+        <div class="event-thumb" data-gallery-open data-src="images/evenements/conference-blessures-emotionnelles-2020.jpg" data-caption="Conférence « Guérir des Blessures Émotionnelles » — 4 avril 2020, Somatel Hôtel de Bali">
+          <span class="event-badge">Conférence</span>
+          <img src="images/evenements/conference-blessures-emotionnelles-2020.JPG" alt="Affiche de la conférence Guérir des Blessures Émotionnelles, 4 avril 2020" loading="lazy">
+        </div>
+        <div class="event-body">
+          <div class="event-date"><svg width="13" height="13" style="vertical-align:-2px;margin-right:.3rem"><use href="#icon-calendar"></use></svg>Samedi 4 avril 2020 · 14h–18h</div>
+          <h3>Guérir des Blessures Émotionnelles</h3>
+          <p>« Un choix gagnant pour ta vie familiale et professionnelle. » Conférence-atelier avec le Dr Élisabeth Fon, M. Franck Tomeba et Mme Alix Tchengou, sous la coordination de Marlyse Baboua.</p>
+          <div class="event-meta"><span class="event-tag">Somatel Hôtel, Bali</span><span class="event-tag">Atelier &amp; Partage</span></div>
+        </div>
+      </div>
+
+      <div class="event-card reveal reveal-delay-1">
+        <div class="event-thumb" data-gallery-open data-src="images/evenements/mission-sante-mengang-2021.JPG" data-caption="Mission Santé Humanitaire — Édition Mengang 2021, du 6 au 11 juillet 2021">
+          <span class="event-badge">Mission Santé</span>
+          <img src="images/evenements/mission-sante-mengang-2021.JPG" alt="Affiche de la mission santé humanitaire, édition Mengang 2021" loading="lazy">
+        </div>
+        <div class="event-body">
+          <div class="event-date"><svg width="13" height="13" style="vertical-align:-2px;margin-right:.3rem"><use href="#icon-calendar"></use></svg>Du 6 au 11 juillet 2021 · 08h–16h</div>
+          <h3>Mission Santé Humanitaire — Mengang 2021</h3>
+          <p>En partenariat avec l'Association Arbre de Vie et la Commune de Mengang : médecine générale, chirurgie foraine, soins dentaires, ophtalmologie, gynécologie-obstétrique et accouchement.</p>
+          <div class="event-meta"><span class="event-tag">Centre intégré, Mengang</span><span class="event-tag">Soins gratuits</span></div>
+        </div>
+      </div>
+
+      <div class="event-card reveal reveal-delay-2">
+        <div class="event-thumb" data-gallery-open data-src="images/evenements/atelier-estime-de-soi.JPG" data-caption="Atelier gratuit « Estime de soi, alliée indispensable pour ta destinée » avec Mme Alix Tomeba Tchengou">
+          <span class="event-badge">Atelier gratuit</span>
+          <img src="images/evenements/atelier-estime-de-soi.JPG" alt="Affiche de l'atelier gratuit Estime de soi, alliée indispensable pour ta destinée" loading="lazy">
+        </div>
+        <div class="event-body">
+          <div class="event-date"><svg width="13" height="13" style="vertical-align:-2px;margin-right:.3rem"><use href="#icon-calendar"></use></svg>Samedi 02 juillet · à partir de 14h00</div>
+          <h3>Estime de Soi, Alliée Indispensable pour ta Destinée</h3>
+          <p>Atelier gratuit animé par notre fondatrice, Mme Alix Tomeba Tchengou, à la Case créative d'Akwa Nord — « Je te loue de ce que je suis une créature si merveilleuse » (Psaumes 139:14).</p>
+          <div class="event-meta"><span class="event-tag">Case créative, Akwa Nord</span><span class="event-tag">Entrée libre</span></div>
+        </div>
+      </div>
+
+      <div class="event-card reveal reveal-delay-3">
+        <div class="event-thumb" data-gallery-open data-src="images/evenements/formation-javel-savon-2026.JPG" data-caption="Atelier de formation en production de Javel et savon de ménage — 11 juillet 2026, Douala PK8">
+          <span class="event-badge">Formation</span>
+          <img src="images/evenements/formation-javel-savon-2026.JPG" alt="Affiche de l'atelier de formation en production de javel et savon de ménage" loading="lazy">
+        </div>
+        <div class="event-body">
+          <div class="event-date"><svg width="13" height="13" style="vertical-align:-2px;margin-right:.3rem"><use href="#icon-calendar"></use></svg>11 juillet 2026 · 08h–15h</div>
+          <h3>Formation en Production de Javel &amp; Savon de Ménage</h3>
+          <p>Organisée avec l'association Redonnons Espoir autour du thème « Jeune, développe les qualités d'un leader audacieux », à Douala PK8 Bassa — attestation remise à chaque participant.</p>
+          <div class="event-meta"><span class="event-tag">Douala, PK8 Bassa</span><span class="event-tag">Attestation délivrée</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERIE PHOTOS & VIDÉOS ============ -->
+<section class="gallery" id="galerie">
+  <div class="container">
+    <div class="section-head center">
+      <p class="eyebrow">Galerie</p>
+      <h2>Photos &amp; Vidéos de Nos Événements</h2>
+      <p>Un aperçu en images de nos conférences, missions de santé et ateliers de formation sur le terrain. Cliquez sur une photo pour l'agrandir.</p>
+    </div>
+
+    <div class="gallery-filters" id="galleryFilters">
+      <button class="gfilter active" data-filter="all">Tout</button>
+      <button class="gfilter" data-filter="conference">Conférences</button>
+      <button class="gfilter" data-filter="sante">Missions Santé</button>
+      <button class="gfilter" data-filter="atelier">Ateliers</button>
+      <button class="gfilter" data-filter="formation">Formations</button>
+      <button class="gfilter" data-filter="equipe">Équipe</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid"><!-- généré automatiquement par le script, voir mediaItems --></div>
+    <p class="gallery-more">📸 Album en cours de constitution — d'autres photos et vidéos de nos prochains événements seront ajoutées régulièrement ici.</p>
+  </div>
+</section>
+
+<!-- Lightbox (photo & vidéo) -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" id="lbClose" aria-label="Fermer"><svg width="18" height="18"><use href="#icon-close"></use></svg></button>
+    <button class="lightbox-prev" id="lbPrev" aria-label="Précédent"><svg width="18" height="18"><use href="#icon-chev-left"></use></svg></button>
+    <div id="lbMedia"></div>
+    <button class="lightbox-next" id="lbNext" aria-label="Suivant"><svg width="18" height="18"><use href="#icon-chev-right"></use></svg></button>
+    <p class="lightbox-cap" id="lbCaption"></p>
+  </div>
+</div>
+
+<!-- ============ VALUES ============ -->
+<section class="values">
+  <div class="container">
+    <div class="section-head center">
+      <p class="eyebrow">Notre Approche</p>
+      <h2>Ce Qui Guide Chacun de Nos Programmes</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card reveal"><span class="num">I</span><h4>Intégrité</h4><p>Un enseignement fondé sur l'honnêteté et la cohérence entre la parole et l'action.</p></div>
+      <div class="value-card reveal reveal-delay-1"><span class="num">II</span><h4>Excellence</h4><p>Des standards élevés dans la pédagogie, le contenu et l'accompagnement.</p></div>
+      <div class="value-card reveal reveal-delay-2"><span class="num">III</span><h4>Communauté</h4><p>Un réseau de soutien durable entre étudiants, formateurs et anciens.</p></div>
+      <div class="value-card reveal reveal-delay-3"><span class="num">IV</span><h4>Service</h4><p>Une formation tournée vers l'action concrète et l'impact sur le terrain.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials" id="temoignages">
+  <div class="container">
+    <div class="section-head center">
+      <p class="eyebrow">Témoignages</p>
+      <h2>Ce Que Disent Nos Diplômés</h2>
+    </div>
+    <div class="testi-track-wrap">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-card">
+          <div class="testi-stars">
+            <svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg>
+          </div>
+          <p>« Cette formation a transformé ma manière de diriger et de servir ma communauté. Un enseignement profond et applicable. »</p>
+          <div class="testi-person"><div class="testi-avatar">M</div><div><div class="testi-name">Marie K.</div><div class="testi-role">Leadership Spirituel, promotion 2024</div></div></div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">
+            <svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg>
+          </div>
+          <p>« Un accompagnement humain et rigoureux à la fois. J'ai gagné en clarté sur ma mission et mes priorités de vie. »</p>
+          <div class="testi-person"><div class="testi-avatar">J</div><div><div class="testi-name">Jean-Paul T.</div><div class="testi-role">Coaching de Vie, promotion 2023</div></div></div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">
+            <svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg>
+          </div>
+          <p>« Théologie Pratique m'a donné des outils concrets pour enseigner avec assurance et enraciner ma pratique quotidienne. »</p>
+          <div class="testi-person"><div class="testi-avatar">R</div><div><div class="testi-name">Ruth N.</div><div class="testi-role">Théologie Pratique, promotion 2024</div></div></div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">
+            <svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg><svg><use href="#icon-star"></use></svg>
+          </div>
+          <p>« Une académie qui allie excellence académique et chaleur humaine. Je recommande vivement à tout futur leader. »</p>
+          <div class="testi-person"><div class="testi-avatar">D</div><div><div class="testi-name">David M.</div><div class="testi-role">Leadership Spirituel, promotion 2022</div></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-nav" id="testiNav"></div>
+  </div>
+</section>
+
+<!-- ============ CTA BANNER ============ -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Prêt à Révéler le Leader en Vous ?</h2>
+    <p>Rejoignez une communauté engagée à former des esprits éclairés et des vies impactées.</p>
+    <a href="#contact" class="btn btn-gold">Rejoindre l'Académie <svg width="16" height="16"><use href="#icon-arrow"></use></svg></a>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info reveal">
+      <p class="eyebrow">Contact</p>
+      <h3>Parlons de Votre Parcours</h3>
+      <p>Une question sur nos formations, nos admissions ou nos partenariats ? Notre équipe vous répond avec plaisir.</p>
+      <div class="contact-item"><div class="contact-icon"><svg><use href="#icon-phone"></use></svg></div><div><div class="lbl">Téléphone</div><div class="val">---------</div></div></div>
+      <div class="contact-item"><div class="contact-icon"><svg><use href="#icon-globe"></use></svg></div><div><div class="lbl">Site Web</div><div class="val"><a href="https://www.honorlifeassociation.com" target="_blank" rel="noopener">www.honorlifeassociation.com</a></div></div></div>
+      <div class="contact-item"><div class="contact-icon"><svg><use href="#icon-mail"></use></svg></div><div><div class="lbl">Email</div><div class="val"><a href="mailto:contacthonorlifeasso@gmail.com">contacthonorlifeasso@gmail.com</a></div></div></div>
+      <div class="contact-item"><div class="contact-icon"><svg><use href="#icon-pin"></use></svg></div><div><div class="lbl">Réseaux</div><div class="val">Honor Life</div></div></div>
+    </div>
+    <form class="contact-form reveal reveal-delay-1" id="contactForm" action="https://formsubmit.co/contacthonorlifeasso@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Nouveau message — Honor Life association">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <div class="field-row">
+        <div class="field"><label for="fname">Nom complet</label><input id="fname" name="Nom" type="text" placeholder="Votre nom" required></div>
+        <div class="field"><label for="femail">Email</label><input id="femail" name="Email" type="email" placeholder="vous@exemple.com" required></div>
+      </div>
+      <div class="field"><label for="fsubject">Sujet</label><input id="fsubject" name="Sujet" type="text" placeholder="Objet de votre message"></div>
+      <div class="field"><label for="fmsg">Message</label><textarea id="fmsg" name="Message" rows="5" placeholder="Écrivez votre message ici..." required></textarea></div>
+      <button type="submit" class="btn btn-gold">Envoyer le Message <svg width="16" height="16"><use href="#icon-arrow"></use></svg></button>
+      <p class="form-note">En envoyant ce formulaire, vous acceptez notre <a href="confidentialite.html">politique de confidentialité</a>.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer id="blog">
+  <div class="leaf-pattern" style="background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%22140%22><path d=%22M60 10c10 20 10 60 0 120M60 40c15-5 25 5 25 15s-15 15-25 8M60 70c-15-5-25 5-25 15s15 15 25 8M60 100c15-5 25 5 25 15s-15 12-25 5%22 stroke=%22%23e7c477%22 stroke-width=%222%22 fill=%22none%22/></svg>')"></div>
+  <div class="container footer-grid">
+    <div class="footer">
+      <div class="footer-brand">
+        <img src="logo.png" alt="Honor Life Academy">
+        <div class="footer-brand-text"><span>HONOR LIFE</span>Academy</div>
+      </div>
+      <p class="desc">Élever les esprits, éclairer les vies. Une académie fondée par Mme Alix Tomeba Tchengou, dédiée à la formation de leaders intègres et impactants.</p>
+    </div>
+    <div class="footer">
+      <h5>Navigation</h5>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#formations">Nos Formations</a></li>
+        <li><a href="#evenements">Événements</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#apropos">À Propos</a></li>
+        <li><a href="#temoignages">Témoignages</a></li>
+      </ul>
+    </div>
+    <div class="footer">
+      <h5>Formations</h5>
+      <ul>
+        <li><a href="#formations">Leadership Spirituel</a></li>
+        <li><a href="#formations">Théologie Pratique</a></li>
+        <li><a href="#formations">Coaching de Vie</a></li>
+        <li><a href="#contact">Admissions</a></li>
+      </ul>
+    </div>
+    <div class="footer">
+      <h5>Contact</h5>
+      <ul class="footer-contact">
+        <li><svg><use href="#icon-phone"></use></svg> --------- </li>
+        <li><svg><use href="#icon-globe"></use></svg> <a href="https://www.honorlifeassociation.com" target="_blank" rel="noopener" style="color:inherit">www.honorlifeassociation.com</a></li>
+        <li><svg><use href="#icon-fb"></use></svg> Honor Life</li>
+        <li><svg><use href="#icon-ig"></use></svg> Honor Life</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© Copyright Honor Life Academy — Tous droits réservés. website by "GENMAN"<a href="https://www.honorlifeassociation.com" target="_blank" rel="noopener" style="color:#8a94ab;text-decoration:underline;">Honor Life Association</a> &nbsp;·&nbsp; <a href="mentions-legales.html" style="color:#8a94ab;text-decoration:underline;">Mentions légales</a> &nbsp;·&nbsp; <a href="confidentialite.html" style="color:#8a94ab;text-decoration:underline;">Confidentialité</a></p>
+    <div class="socials">
+      <a href="https://www.facebook.com/honor.life.assciation/photos" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#icon-fb"></use></svg></a>
+      <a href="https://instagram.com/honorlifeacademy" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#icon-ig"></use></svg></a>
+      <a href="mailto:contacthonorlifeasso@gmail.com" aria-label="Email"><svg><use href="#icon-mail"></use></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ---- header scroll state ----
+const header = document.getElementById('siteHeader');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 30);
+});
+
+// ---- mobile menu ----
+const burger = document.getElementById('burgerBtn');
+const panel = document.getElementById('mobilePanel');
+burger.addEventListener('click', () => panel.classList.toggle('open'));
+panel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => panel.classList.remove('open')));
+
+// ---- reveal on scroll ----
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in-view');
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+revealEls.forEach(el => io.observe(el));
+
+// ---- animated counters ----
+const stats = document.querySelectorAll('.stat-num');
+const statsIO = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const target = parseInt(el.dataset.count, 10);
+      let start = 0;
+      const duration = 1600;
+      const startTime = performance.now();
+      function tick(now){
+        const progress = Math.min((now - startTime) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.floor(eased * target).toLocaleString('fr-FR');
+        if (progress < 1) requestAnimationFrame(tick);
+        else el.textContent = target.toLocaleString('fr-FR') + '+';
+      }
+      requestAnimationFrame(tick);
+      statsIO.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+stats.forEach(el => statsIO.observe(el));
+
+// ---- 3D tilt interaction ----
+function applyTilt(selector, intensity){
+  document.querySelectorAll(selector).forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const midX = rect.width / 2;
+      const midY = rect.height / 2;
+      const rotateY = ((x - midX) / midX) * intensity;
+      const rotateX = -((y - midY) / midY) * intensity;
+      card.style.transform = `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(1200px) rotateX(0deg) rotateY(0deg) translateY(0)';
+    });
+  });
+}
+applyTilt('.tilt-card', 8);
+applyTilt('.program-card', 6);
+
+// ---- testimonial carousel ----
+const track = document.getElementById('testiTrack');
+const navWrap = document.getElementById('testiNav');
+const cards = track.children.length;
+function cardsPerView(){ return window.innerWidth <= 980 ? 1 : 3; }
+let page = 0;
+function totalPages(){ return Math.max(1, cards - cardsPerView() + 1); }
+function buildDots(){
+  navWrap.innerHTML = '';
+  for(let i=0;i<totalPages();i++){
+    const d = document.createElement('div');
+    d.className = 'testi-dot' + (i===page ? ' active' : '');
+    d.addEventListener('click', () => { page = i; render(); });
+    navWrap.appendChild(d);
+  }
+}
+function render(){
+  const cardWidth = track.children[0].getBoundingClientRect().width + 25.6;
+  track.style.transform = `translateX(-${page * cardWidth}px)`;
+  [...navWrap.children].forEach((d,i) => d.classList.toggle('active', i===page));
+}
+buildDots(); render();
+window.addEventListener('resize', () => { if (window.innerWidth === (window._lw ??= window.innerWidth)) return; window._lw = window.innerWidth; page = 0; buildDots(); render(); });
+let autoSlide = setInterval(() => {
+  page = (page + 1) % totalPages();
+  render();
+}, 5000);
+track.addEventListener('mouseenter', () => clearInterval(autoSlide));
+
+// ---- contact form (sends a real email via FormSubmit) ----
+const contactForm = document.getElementById('contactForm');
+contactForm.addEventListener('submit', function(e){
+  e.preventDefault();
+  const btn = this.querySelector('button[type="submit"]');
+  const original = btn.innerHTML;
+  btn.innerHTML = 'Envoi en cours…';
+  btn.disabled = true;
+
+  const formData = new FormData(this);
+  const email = this.getAttribute('action').split('/').pop();
+
+  fetch('https://formsubmit.co/ajax/' + email, {
+    method: 'POST',
+    headers: { 'Accept': 'application/json' },
+    body: formData
+  })
+  .then(res => res.json())
+  .then(() => {
+    btn.innerHTML = 'Message Envoyé ✓';
+    contactForm.reset();
+  })
+  .catch(() => {
+    btn.innerHTML = 'Erreur — réessayez';
+  })
+  .finally(() => {
+    setTimeout(() => { btn.innerHTML = original; btn.disabled = false; }, 3200);
+  });
+});
+
+/* =======================================================================
+   GALERIE PHOTOS & VIDÉOS — ÉVÉNEMENTS
+   -----------------------------------------------------------------------
+   Pour AJOUTER UNE PHOTO plus tard, copiez ce modèle dans le tableau
+   mediaItems ci-dessous :
+     { type:'image', src:'images/galerie/mon-fichier.JPG', category:'formation', caption:'Ma légende' }
+
+   Pour AJOUTER UNE VIDÉO plus tard (formats .mp4 recommandés) :
+     { type:'video', src:'images/galerie/ma-video.mp4', poster:'images/galerie/ma-video-poster.JPG', category:'atelier', caption:'Ma légende' }
+
+   Catégories disponibles : conference | sante | atelier | formation | equipe
+   Ajoutez size:'wide' ou size:'tall' pour varier la taille de la vignette.
+   ======================================================================= */
+const mediaItems = [
+  { type:'image', src:'images/evenements/conference-blessures-emotionnelles-2020.JPG', category:'conference', caption:'Conférence « Guérir des Blessures Émotionnelles » — 4 avril 2020', size:'wide' },
+  { type:'image', src:'images/evenements/mission-sante-mengang-2021.JPG', category:'sante', caption:'Mission Santé Humanitaire — Édition Mengang 2021' },
+  { type:'image', src:'images/evenements/atelier-estime-de-soi.JPG', category:'atelier', caption:'Atelier gratuit « Estime de soi » avec Mme Alix Tomeba Tchengou' },
+  { type:'image', src:'images/evenements/formation-javel-savon-2026.JPG', category:'formation', caption:'Affiche — Formation Javel &amp; Savon de Ménage, 11 juillet 2026', size:'wide' },
+  { type:'image', src:'images/galerie/formation-melange-javel.JPG', category:'formation', caption:"Préparation du mélange lors de l'atelier Javel &amp; Savon" },
+  { type:'image', src:'images/galerie/formation-preparation-savon.JPG', category:'formation', caption:'Préparation de la pâte à savon sur le feu' },
+  { type:'image', src:'images/galerie/formation-pate-savon.jpg', category:'formation', caption:'La pâte de savon en cours de mélange' },
+  { type:'image', src:'images/galerie/formation-moule-savon.JPG', category:'formation', caption:'Moulage de la pâte de savon de ménage' },
+  { type:'image', src:'images/galerie/formation-savons-produits.JPG', category:'formation', caption:'Savons de ménage finis, prêts à être distribués', size:'tall' },
+  { type:'image', src:'images/galerie/formation-equipe-participantes.JPG', category:'formation', caption:"Les participantes de l'atelier de formation", size:'wide' },
+  { type:'image', src:'images/equipe/equipe-partenariat.JPG', category:'equipe', caption:'Membres de Honor Life aux côtés de nos partenaires' },
+  { type:'image', src:'images/equipe/carte-presidente-alix.JPG', category:'equipe', caption:'Mme Alix Tomeba Tchengou, fondatrice et présidente de Honor Life' },
+  { type:'image', src:'images/equipe/equipe-terrain-1.JPG', category:'equipe', caption:"Un membre de l'équipe Honor Life sur le terrain" },
+  { type:'image', src:'images/equipe/equipe-terrain-2.JPG', category:'equipe', caption:'L’équipe Honor Life mobilisée pour ses missions' }
+  // 👉 Les prochaines photos et vidéos d'événements viendront s'ajouter juste ici.
+];
+
+const galleryGrid = document.getElementById('galleryGrid');
+const filterBtns = document.querySelectorAll('.gfilter');
+let currentFilter = 'all';
+let lightboxList = [];
+let lightboxIndex = 0;
+
+function renderGallery(){
+  galleryGrid.innerHTML = '';
+  const items = currentFilter === 'all' ? mediaItems : mediaItems.filter(m => m.category === currentFilter);
+  if (!items.length){
+    galleryGrid.innerHTML = '<p class="gallery-empty">Aucune photo dans cette catégorie pour le moment.</p>';
+    return;
+  }
+  items.forEach((item, i) => {
+    const el = document.createElement('div');
+    el.className = 'gitem' + (item.size ? ' ' + item.size : '');
+    el.style.animationDelay = (i * 0.04) + 's';
+    if (item.type === 'video') {
+      el.innerHTML = `<img src="${item.poster || item.src}" alt="${item.caption}" loading="lazy">
+        <div class="play-btn"><svg width="17" height="17"><use href="#icon-play"></use></svg></div>
+        <div class="g-overlay"><span>${item.caption}</span></div>`;
+    } else {
+      el.innerHTML = `<img src="${item.src}" alt="${item.caption}" loading="lazy">
+        <div class="g-overlay"><span>${item.caption}</span></div>`;
+    }
+    el.addEventListener('click', () => {
+      lightboxList = items;
+      lightboxIndex = i;
+      showLightbox();
+    });
+    galleryGrid.appendChild(el);
+  });
+}
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentFilter = btn.dataset.filter;
+    renderGallery();
+  });
+});
+renderGallery();
+
+// ---- lightbox ----
+const lightbox = document.getElementById('lightbox');
+const lbMedia = document.getElementById('lbMedia');
+const lbCaption = document.getElementById('lbCaption');
+
+function showLightbox(){
+  const item = lightboxList[lightboxIndex];
+  if (!item) return;
+  lbMedia.innerHTML = item.type === 'video'
+    ? `<video src="${item.src}" controls autoplay ${item.poster ? 'poster="'+item.poster+'"' : ''}></video>`
+    : `<img src="${item.src}" alt="${item.caption || ''}">`;
+  lbCaption.textContent = item.caption || '';
+  lightbox.classList.add('open');
+}
+function closeLightbox(){
+  lightbox.classList.remove('open');
+  lbMedia.innerHTML = '';
+}
+document.getElementById('lbClose').addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+document.getElementById('lbPrev').addEventListener('click', () => {
+  lightboxIndex = (lightboxIndex - 1 + lightboxList.length) % lightboxList.length;
+  showLightbox();
+});
+document.getElementById('lbNext').addEventListener('click', () => {
+  lightboxIndex = (lightboxIndex + 1) % lightboxList.length;
+  showLightbox();
+});
+document.addEventListener('keydown', (e) => {
+  if (!lightbox.classList.contains('open')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') document.getElementById('lbPrev').click();
+  if (e.key === 'ArrowRight') document.getElementById('lbNext').click();
+});
+
+// Les affiches d'événements ouvrent aussi la visionneuse (photo seule)
+document.querySelectorAll('[data-gallery-open]').forEach(el => {
+  el.addEventListener('click', () => {
+    lightboxList = [{ type:'image', src: el.dataset.src, caption: el.dataset.caption }];
+    lightboxIndex = 0;
+    showLightbox();
+  });
+});
+</script>
+</body>
+</html>
